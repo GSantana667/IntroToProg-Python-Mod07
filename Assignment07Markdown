@@ -12,6 +12,8 @@ runtime are called exceptions or logical errors. These occur when; try to open a
 try to didvide a number by zero, or try to import a module that does not exist.
 o	The try…except block is used to handle exceptions in python.
 
+![Exception Handle](web address "Exception Handle")
+
 try:
     # code that may cause exception
 except:
@@ -32,7 +34,9 @@ except IndexError:
     print("Index Out of Bound.")
 # Output: Index Out of Bound
 Here, we are trying to access a value to the index 5. Hence, index error exception occurs
- 
+
+![alt text](web address "tooltip text")
+
 The ZeroDivisionError exception is skipped and the IndexError is executed.
 o	Try with else clause.
 In some situations you might want to run a certain block of code if the code block inside try runs without any errors.
