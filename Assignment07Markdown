@@ -12,7 +12,7 @@ runtime are called exceptions or logical errors. These occur when; try to open a
 try to didvide a number by zero, or try to import a module that does not exist.
 o	The try…except block is used to handle exceptions in python.
 
-![Exception Handle](https://github.com/GSantana667/IntroToProg-Python-Mod07/blob/main/Images/Exception%20handling1.png?raw=true "Exception Handle")
+![Screenshot of a Excetion Handle, added in the Markdown.](https://myoctocat.com/assets/images/base-octocat.svg)
 
 try:
     # code that may cause exception
