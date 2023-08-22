@@ -1,5 +1,64 @@
 # Title
+GSantana 08/21/2023
+
 ## Introduction
-## Topic 1
+    In module seven we begin by learning to work will files using pickling and structured exception handling.
+We will also be learning how to create more complex GitHub web pages. This new web page will include basic
+commands in a language called “markdown”.
+
+## Exception Handling
+   An exception in python is an unexpected event that occurs during program execution. Errors that occur at 
+runtime are called exceptions or logical errors. These occur when; try to open a file that does not exist, 
+try to didvide a number by zero, or try to import a module that does not exist.
+o	The try…except block is used to handle exceptions in python.
+
+try:
+    # code that may cause exception
+except:
+    # code to run when exception occurs
+
+ For each try block, there can be zero or more except blocks. Multiple except blocks allow us to handle each 
+exception differently. The argument type of each except block indicates the type of exception that can be handled by it. 
+For example,
+try:
+    
+    even_numbers = [2,4,6,8]
+    print(even_numbers[5])
+
+except ZeroDivisionError:
+    print("Denominator cannot be 0.")
+    
+except IndexError:
+    print("Index Out of Bound.")
+# Output: Index Out of Bound
+Here, we are trying to access a value to the index 5. Hence, index error exception occurs
+ 
+The ZeroDivisionError exception is skipped and the IndexError is executed.
+o	Try with else clause.
+In some situations you might want to run a certain block of code if the code block inside try runs without any errors.
+For these cases, you can use the optional else keyword with the try statement.
+Here’s an example:
+ 
+
+If we pass an odd number.
+ 
+
+If we pass an even number, the reciprocal is computed and displayed.
+ 
+However, if we pass a 0, we get the ZeroDivisionError as the code block inside the else is not handled by preceding.
+ 
+  
+o	Python try…finally
+In Python, the finally block is always executed no matter whether there is an exception or not .
+The finally block is optional. For each try block, there can be only one finally block.
+Lets see an example,
+ 
+Output
+ 
+ In this example, we are dividing a number by 0 inside the try block. Here, this code generates an exception. 
+The exception is caught by the except block, then the finally block is executed.
+To learn more on exception handling visit: Python Exception Handling (With Examples) (programiz.com)
+
+## Topic 2
 ### Subtopic
 ## Summary
