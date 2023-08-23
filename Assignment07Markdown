@@ -12,7 +12,7 @@ runtime are called exceptions or logical errors. These occur when; try to open a
 try to didvide a number by zero, or try to import a module that does not exist.
 o	The try…except block is used to handle exceptions in python.
 
-![Exception handling1.png](Exception handling1.png"Exception Handle")
+![Exception handling1.png](https://github.com/GSantana667/IntroToProg-Python-Mod07/blob/main/Images/Exception%20handling1.png)
 
 try:
     # code that may cause exception
@@ -89,14 +89,23 @@ example. I begin to add in some error handling, often referred to as “try-exce
  
 (Figure 7.2)
 
-3.	The third step is to unpickle and read the binary file. Similar to when you open and write a binary file, this time it will open and read the binary final. That is what the ‘rb’ stands for in the script below in figure 7.3. Again, I use structured error handling in the form of “try-except” block.
+3.	The third step is to unpickle and read the binary file. Similar to when you open and write a binary file, this time it 
+will open and read the binary final. That is what the ‘rb’ stands for in the script below in figure 7.3. Again, I use structured
+error handling in the form of “try-except” block.
   
 (Figure 7.3)
 
-4.	The final section of the code encapsulates the main logic of the script. It initializes the filename, saves data to a file using pickling, and then loads data from the file using unpickling. The code inside this block will only execute when the script is run directly, ensuring that these operations are performed when the script is intended  to be used as a standalone program. If this script is imported into another script, this block won’t be executed, allowing the functions and data to be used in a modular way. See figure 7.4 for example.
+4.	The final section of the code encapsulates the main logic of the script. It initializes the filename, saves data to a file
+using pickling, and then loads data from the file using unpickling. The code inside this block will only execute when the script is 
+run directly, ensuring that these operations are performed when the script is intended  to be used as a standalone program. If this 
+script is imported into another script, this block won’t be executed, allowing the functions and data to be used in a modular way. 
+See figure 7.4 for example.
  
 (Figure7.4)
 Here is what the text file looks like when writing binary code using pickling.
 
 ### Subtopic
 ## Summary
+Pickles are a very useful tool for simplifying your script and storing data. Using pickles for serialization and deserialization 
+in python can streamline data storage and transmission. However, it’s essential to incorporate robust exception handling practices
+to gracefully handle errors that can occur during pickling and unpickling. 
