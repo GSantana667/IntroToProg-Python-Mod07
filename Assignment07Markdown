@@ -12,7 +12,7 @@ runtime are called exceptions or logical errors. These occur when; try to open a
 try to didvide a number by zero, or try to import a module that does not exist.
 o	The try…except block is used to handle exceptions in python.
 
-![Excetion Handle, added in the Markdown.](Exception handling1.png"Exception Handle")
+![Exception handling1.png](Exception handling1.png"Exception Handle")
 
 try:
     # code that may cause exception
@@ -63,6 +63,40 @@ Output
 The exception is caught by the except block, then the finally block is executed.
 To learn more on exception handling visit: Python Exception Handling (With Examples) (programiz.com)
 
-## Topic 2
+## Pickling
+Pickling is the process whereby a python object hierarchy is converted into a byte stream. Unpickling is the process 
+by which original Python objects are retrieved from the string representation i.e., from the pickle file. It’s a 
+process that involves serializing (convering) a python object into a format that can be stored or transmitted, and 
+later deseralized (reconstructed) to obtain the original object.
+    The term “pickling” comes from the analogy with the process of preserving vegetables by pickling them in a jar. 
+In python, pickling allows you to preserve the state of complex data structures, including dictionaries, lists, and classes, 
+so they can be saved to afile, database, or storage medium.
+    Python provides the built-in “pickle” module to facilitate pickling and unpickling. 
+Here I provided some script as an example of pickling:
+ 
+
+Assignment 07
+    In assignment seven the task was to demonstrate how pickling and structured error handling work. I kept my code really
+simple so it would be clear on how exactly each process works.
+1.	The first step is to define my data structure. I made some simple data consisting of name, age, and city you live in. 
+You can see this below in figure 7.1.
+
+ 
+(Figure 7.1 )
+2.	Next, I write the data to a file using the pickle method. When the file opens it will write binary, hence the ‘wb’. 
+The ‘w’ opens the file in write mode and the ‘b’ indicates the file should be treated as a binary file. See figure 7.2 for an 
+example. I begin to add in some error handling, often referred to as “try-except “ blocks. 
+ 
+(Figure 7.2)
+
+3.	The third step is to unpickle and read the binary file. Similar to when you open and write a binary file, this time it will open and read the binary final. That is what the ‘rb’ stands for in the script below in figure 7.3. Again, I use structured error handling in the form of “try-except” block.
+  
+(Figure 7.3)
+
+4.	The final section of the code encapsulates the main logic of the script. It initializes the filename, saves data to a file using pickling, and then loads data from the file using unpickling. The code inside this block will only execute when the script is run directly, ensuring that these operations are performed when the script is intended  to be used as a standalone program. If this script is imported into another script, this block won’t be executed, allowing the functions and data to be used in a modular way. See figure 7.4 for example.
+ 
+(Figure7.4)
+Here is what the text file looks like when writing binary code using pickling.
+
 ### Subtopic
 ## Summary
